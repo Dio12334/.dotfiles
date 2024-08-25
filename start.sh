@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade
+sudo apt install tree
 
 DIR_LIST=$(ls -d */ | cut -f1 -d'/')
 echo ${DIR_LIST[@]}

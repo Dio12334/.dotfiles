@@ -2,7 +2,6 @@
 
 sudo snap install nvim --classic
 sudo snap install clangd --classic
-sudo apt update && sudo apt upgrade
 sudo apt install luarocks
 sudo apt install ripgrep
 sudo apt install fd-find
