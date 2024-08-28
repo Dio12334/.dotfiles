@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FILE=$1
+
+touch cronjobs.c
+crontab -l > /tmp/cronjobs.c
+cat $1 >> cronjobs.c
+crontab cronjobs.c
+rm /tmp/cronjobs.c
