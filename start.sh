@@ -5,7 +5,7 @@ sudo apt install tree
 sudo apt install acpi
 sudo apt install curl
 sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-bash
+#bash
 rustup update
 
 DIR_LIST=$(ls -d */ | cut -f1 -d'/')

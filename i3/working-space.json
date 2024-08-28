@@ -26,7 +26,7 @@
                 "class": "^kitty$",
                 "instance": "^kitty$",
                // "machine": "^diego\\-VirtualBox$",
-                "title": "^gotop\\-cjbassi$"
+                "title": "^gotop$"
                }
             ],
             "type": "con"

@@ -48,6 +48,8 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+exec --no-startup-id --no-focus kitty -1 --start-as minimized
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -202,11 +204,11 @@ for_window [class=".*"] border pixel
 default_border pixel
 
 gaps inner 5
-gaps outer 2
+gaps outer 1
 smart_gaps on
 
 bindsym Print exec gnome-screenshot
-bindsym $mod+Print exec gnome-screenshot -a -c
+bindsym $mod+Print exec gnome-screenshot -a
 
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -214,8 +216,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 assign [class="firefox"] $ws2
 
 
-exec--no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/workspace-1.json'"
+exec --no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/workspace-1.json'"
 
-exec kitty -e cmus
-exec kitty -e gotop-cjbassi
-exec kitty --title "neofetch" -e sh -c "neofetch; exec zsh"
+exec kitty -1 --title "cmus" -e cmus
+exec kitty -1 --title "gotop" -e gotop
+exec kitty -1 --title "neofetch" -e sh -c "neofetch; exec zsh"
