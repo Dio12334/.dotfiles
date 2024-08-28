@@ -117,8 +117,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
+set $ws1 1: 
+set $ws2 2: 󰈹
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -188,9 +188,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+# bar {
+#         status_command i3status
+# }
 
 exec --no-startup-id picom -b -f
 # wallpaper
@@ -205,4 +205,17 @@ gaps inner 5
 gaps outer 2
 smart_gaps on
 
+bindsym Print exec gnome-screenshot
+bindsym $mod+Print exec gnome-screenshot -a -c
 
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+assign [class="firefox"] $ws2
+
+
+exec--no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/workspace-1.json'"
+
+exec kitty -e cmus
+exec kitty -e gotop-cjbassi
+exec kitty --title "neofetch" -e sh -c "neofetch; exec zsh"

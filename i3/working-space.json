@@ -1,0 +1,83 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 766,
+               "width": 627,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "gotop-cjbassi",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^kitty$",
+                "instance": "^kitty$",
+               // "machine": "^diego\\-VirtualBox$",
+                "title": "^gotop\\-cjbassi$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 766,
+               "width": 311,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "cmus",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^kitty$",
+                "instance": "^kitty$",
+               // "machine": "^diego\\-VirtualBox$",
+                "title": "^cmus$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 434,
+       "width": 722,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "i3-save-tree --workspace 1 > ~/dotfiles/i3/working-space.json",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^kitty$",
+        "instance": "^kitty$",
+       // "machine": "^diego\\-VirtualBox$",
+        "title": "^neofetch$"
+       }
+    ],
+    "type": "con"
+}
+

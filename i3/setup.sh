@@ -9,6 +9,7 @@ sudo apt update
 sudo apt install i3
 rm ./keyring.deb
 sudo apt install feh
+sudo apt install gnome-screenshot
 
 rm -rf ~/.config/i3
 ln -s $(pwd) ~/.config/i3
