@@ -23,8 +23,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^kitty$",
-                "instance": "^kitty$",
+                //"class": "^kitty$",
+                //"instance": "^kitty$",
                // "machine": "^diego\\-VirtualBox$",
                 "title": "^gotop$"
                }
@@ -46,8 +46,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^kitty$",
-                "instance": "^kitty$",
+                //"class": "^kitty$",
+                //"instance": "^kitty$",
                // "machine": "^diego\\-VirtualBox$",
                 "title": "^cmus$"
                }
@@ -72,8 +72,8 @@
     "percent": 0.5,
     "swallows": [
        {
-        "class": "^kitty$",
-        "instance": "^kitty$",
+        //"class": "^kitty$",
+        //"instance": "^kitty$",
        // "machine": "^diego\\-VirtualBox$",
         "title": "^neofetch$"
        }

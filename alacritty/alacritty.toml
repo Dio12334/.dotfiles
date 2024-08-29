@@ -1,0 +1,15 @@
+import = [
+    "~/.config/alacritty/theme/tokyo-night.toml"
+]
+
+[window]
+padding.x = 0
+padding.y = 0
+
+decorations = "Buttonless"
+opacity = 0.8
+
+[font]
+normal = { family = "0xProto Nerd Font Mono", style = "Bold" }
+size = 8
+

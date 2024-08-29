@@ -48,8 +48,6 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-exec --no-startup-id --no-focus kitty -1 --start-as minimized
-
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -218,6 +216,6 @@ assign [class="firefox"] $ws2
 
 exec --no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/workspace-1.json'"
 
-exec kitty -1 --title "cmus" -e cmus
-exec kitty -1 --title "gotop" -e gotop
-exec kitty -1 --title "neofetch" -e sh -c "neofetch; exec zsh"
+exec i3-sensible-terminal --title "cmus" -e cmus
+exec i3-sensible-terminal --title "gotop" -e gotop
+exec kitty --title "neofetch" -e sh -c "neofetch; exec zsh"

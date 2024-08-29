@@ -1,5 +1,15 @@
+colorscheme green
+colorscheme green-mono-88
+colorscheme zenburn
+colorscheme gruvbox
+colorscheme gray-88
+colorscheme default
+colorscheme cyan
+colorscheme dracula
+colorscheme amazon
+colorscheme gruvbox-alt
+colorscheme spotify
 add ~/Music
 clear 
 Q
-colorscheme green
 q
