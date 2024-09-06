@@ -2,11 +2,11 @@
 
 sudo snap install nvim --classic
 sudo snap install clangd --classic
-sudo apt install luarocks
-sudo apt install ripgrep
-sudo apt install fd-find
-sudo apt install npm
-sudo apt install xclip
+sudo apt install -y luarocks
+sudo apt install -y ripgrep
+sudo apt install -y fd-find
+sudo apt install -y npm
+sudo apt install -y xclip
 
 # font del nvim
 mkdir -p ~/.local/share/fonts

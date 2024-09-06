@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install alacritty
+sudo apt install -y alacritty
 
 rm -rf ~/.config/alacritty
 ln -s $(pwd) ~/.config/alacritty

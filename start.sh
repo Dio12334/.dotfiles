@@ -1,14 +1,21 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade
-sudo apt install tree
-sudo apt install locate
-sudo apt install acpi
-sudo apt install curl
 
-sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-#bash
-rustup update
+mkdir ~/bin
+
+sudo apt install -y tree
+sudo apt install -y locate
+sudo apt install -y acpi
+sudo apt install -y curl
+
+
+if which rustup &> /dev/null; then
+    echo "rustup already installed"
+else
+    sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    rustup update
+fi
 
 source ~/.profile
 

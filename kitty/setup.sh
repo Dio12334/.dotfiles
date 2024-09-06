@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install kitty
+sudo apt install -y kitty
 
 rm -rf ~/.config/kitty
 ln -s $(pwd) ~/.config/kitty
