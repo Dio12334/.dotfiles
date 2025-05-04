@@ -1,1 +1,1 @@
-*/1 * * * * ~/dp_battery-alert
+*/1 * * * * ~/bin/dp_battery-alert

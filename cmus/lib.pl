@@ -1,3 +1,13 @@
+/home/diego/Music/NA/ABBA - Chiquitita.mp3
+/home/diego/Music/NA/ABBA - Dancing Queen.mp3
+/home/diego/Music/NA/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3
+/home/diego/Music/NA/ABBA - Lay All Your Love On Me.mp3
+/home/diego/Music/NA/ABBA - Mamma Mia.mp3
+/home/diego/Music/NA/ABBA - Voulez-Vous.mp3
+/home/diego/Music/NA/ABKCOVEVO - The Rolling Stones - Paint It, Black (Official Lyric Video).mp3
+/home/diego/Music/NA/AbsurdOrpheus - Persona 5 OST - Price [Extended].mp3
+/home/diego/Music/NA/aeactm playlist - Gym Class Heroes ft. Patrick Stump - Cupid's Chokehold (Sub. Español _ Lyrics).mp3
+/home/diego/Music/NA/a-ha - Manhattan Skyline (2016 Remaster).mp3
 /home/diego/Music/NA/ALEXANDROSchannel - [Alexandros] - Droshky! (MV).mp3
 /home/diego/Music/NA/allaboutVGmusic - Far Away (with lyrics) - Red Dead Redemption Soundtrack.mp3
 /home/diego/Music/NA/Al Stewart - Topic - Year of the Cat (2001 Remaster).mp3
@@ -31,7 +41,9 @@
 /home/diego/Music/Summer Girls/CosmicFM - Imitation Lover.mp3
 /home/diego/Music/NA/Cuarteto de Nos - Lo malo de ser bueno.mp3
 /home/diego/Music/NA/Cyberpunk 2077 - Cyberpunk - Edgerunners — Ending Theme _ Let You Down by Dawid Podsiadło _ Netflix.mp3
+/home/diego/Music/NA/Dan Croll - Dan Croll - From Nowhere (Baardsen Remix Video).mp3
 /home/diego/Music/NA/DCCT - Montagem Coral + Vois Sur Ton Chemin x he's back.mp3
+/home/diego/Music/NA/Derek & The Dominos - Topic - Layla.mp3
 /home/diego/Music/NA/Django Unchained OST - Trinity (Titoli) (Annibale E I Cantori Moderni).mp3
 /home/diego/Music/NA/Donna Burke - HEAVENS DIVIDE from METAL GEAR SOLID PEACE WALKER.mp3
 /home/diego/Music/NA/Earth Wind & Fire - Earth, Wind & Fire - Fantasy (Official Audio).mp3
@@ -185,6 +197,7 @@
 /home/diego/Music/NA/sumikainc - sumika _ ふっかつのじゅもん【Music Video】.mp3
 /home/diego/Music/NA/TelaRick - Elden Ring OST - Elden Beast really Extended.mp3
 /home/diego/Music/NA/The Chain Gang Of 1974 - Chain Gang of 1974 -  Sleepwalking [OFFICIAL HQ STREAM].mp3
+/home/diego/Music/NA/The Chemical Brothers - Galvanize.mp3
 /home/diego/Music/NA/TheSmakius - DJANGO UNCHAINED - MAIN THEME - Django.mp3
 /home/diego/Music/NA/john _ TOOBOE - tablet.mp3
 /home/diego/Music/NA/TOTO - Toto - Hold The Line (Official Video).mp3
