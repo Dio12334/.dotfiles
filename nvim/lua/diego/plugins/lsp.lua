@@ -22,6 +22,18 @@ return {
             vim.lsp.protocol.make_client_capabilities(),
             cmp_lsp.default_capabilities())
 
+        local on_attach = function(client, bufnr)
+            local opts = { buffer = bufnr, noremap = true, silent = true }
+            local keymap = vim.keymap.set
+
+            -- Navegación LSP con <leader>
+            keymap("n", "<leader>gd", vim.lsp.buf.definition, opts)
+            keymap("n", "<leader>gD", vim.lsp.buf.declaration, opts)
+            keymap("n", "<leader>gi", vim.lsp.buf.implementation, opts)
+            keymap("n", "<leader>gr", vim.lsp.buf.references, opts)
+
+        end
+
         require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
@@ -29,14 +41,13 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "clangd",
-                "sqlls",
                 "harper_ls",
-                "docker_compose_language_service",
             },
             handlers = {
                 function(server_name) -- Default handler (optional)
                     require("lspconfig")[server_name].setup {
-                        capabilities = capabilities
+                        capabilities = capabilities,
+                        on_attach = on_attach,
                     }
                 end,
 
@@ -60,6 +71,7 @@ return {
                     local lspconfig = require("lspconfig")
                     lspconfig.lua_ls.setup {
                         capabilities = capabilities,
+                        on_attach = on_attach,
                         settings = {
                             Lua = {
                                 runtime = { version = "Lua 5.1" },
@@ -69,6 +81,16 @@ return {
                             }
                         }
                     }
+                end,
+                ["clangd"] = function()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.clangd.setup({
+                        capabilities = capabilities,
+                        on_attach = function(client, bufnr)
+                            client.server_capabilities.diagnosticProvider = nil
+                            on_attach(client, bufnr)
+                        end,
+                    })
                 end,
             }
         })
@@ -105,6 +127,27 @@ return {
                 header = "",
                 prefix = "",
             },
+        })
+        vim.api.nvim_create_autocmd("CursorHold", {
+            callback = function()
+                vim.diagnostic.open_float(nil, {
+                    focusable = false,
+                    border = "rounded",
+                    source = "always",
+                    prefix = " ",
+                    scope = "cursor",
+                })
+            end,
+        })
+
+        -- Desactivar diagnósticos para C y C++
+        vim.api.nvim_create_autocmd("LspAttach", {
+          callback = function(args)
+            local client = vim.lsp.get_client_by_id(args.data.client_id)
+            if client and client.name == "clangd" then
+                vim.diagnostic.enable(false, {bufnr = args.buf})
+            end
+          end,
         })
     end
 }
